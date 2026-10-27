@@ -1,0 +1,69 @@
+
+from io import BytesIO
+from pathlib import Path
+
+import numpy as np
+import tensorflow as tf
+from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
+from PIL import Image
+
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "models" / "leafcare_mobilenetv2.keras"
+LABELS_PATH = BASE_DIR / "models" / "leafcare_mobilenetv2_labels.txt"
+
+app = FastAPI(title="Plant Disease Detection API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+model = tf.keras.models.load_model(MODEL_PATH)
+labels = LABELS_PATH.read_text(encoding="utf-8").splitlines()
+
+
+@app.get("/")
+def home():
+    return {"message": "Plant Disease Detection API is running"}
+import base64
+import binascii
+
+from pydantic import BaseModel
+
+
+class ImageRequest(BaseModel):
+    image: str
+    
+@app.post("/predict")
+async def predict(request: ImageRequest):
+    try:
+        image_bytes = base64.b64decode(request.image, validate=True)
+
+        image = Image.open(BytesIO(image_bytes)).convert("RGB")
+        image = image.resize((224, 224))
+
+        image_array = np.asarray(image, dtype=np.float32) / 255.0
+        image_array = np.expand_dims(image_array, axis=0)
+
+        predictions = model.predict(image_array, verbose=0)[0]
+        predicted_index = int(np.argmax(predictions))
+
+        return {
+            "disease": labels[predicted_index],
+            "confidence": round(float(predictions[predicted_index]), 4),
+        }
+
+    except (ValueError, binascii.Error):
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid Base64 image data.",
+        )
+    except Exception as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Could not process image: {exc}",
+        )
+
