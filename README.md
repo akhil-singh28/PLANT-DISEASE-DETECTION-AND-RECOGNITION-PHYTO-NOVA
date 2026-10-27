@@ -66,6 +66,7 @@ Technology stack
 - Ionicons for interface icons.
 - EAS Build for cloud Android builds.
 - Environment variables for server-side configuration and provider credentials.
+  
 For exact package versions, inspect requirements.txt and PlantDiseaseApp/package.json.
 Requirements
 - Python compatible with the packages in requirements.txt.
