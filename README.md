@@ -142,26 +142,32 @@ The phone cannot use localhost to reach the computer's API; on the phone, localh
 4. Make sure Uvicorn is running.
 5. Allow the server through Windows Firewall on private networks if required.
 6. Confirm the phone can reach the computer.
+
+   
 The example is a local development URL; your IP address may be different. For public release, deploy the backend with HTTPS and configure the app to use that HTTPS URL. Do not expose a development server or secret-bearing endpoint directly to the public internet.
 API endpoints
 The backend currently includes these endpoints. The exact payload fields and response schemas must be verified in api.py.
 POST /predict
 Accepts a plant image and returns a model prediction. The typical flow is:
+
 1. The app captures or selects an image.
 2. The app uploads it to the backend.
 3. The backend validates and preprocesses the image.
 4. The model predicts a class or scores.
 5. The backend sends the result to the app.
+6. 
 Check the implementation for the exact image field name, encoding, input dimensions, output fields, and error responses.
 POST /chat
 Accepts a plant-health question and returns a chatbot response. It may require a provider API key configured on the backend. Check api.py for the exact request and response format.
 Testing
 If FastAPI docs are enabled, open http://127.0.0.1:8000/docs on the development computer. Use sample images and non-sensitive test messages. Avoid logging API keys or other credentials.
 Model and dataset
+
 The project references these model files:
 - models/phytonova_mobilenetv2.keras
 - models/phytonova_mobilenetv2_labels.txt
 Include them in the repository only if the backend needs them and their size and license allow redistribution. If they are too large for ordinary Git hosting, consider Git LFS or an artifact host and document how to obtain them.
+
 
 Before relying on the model, document:
 - Dataset source and license.
@@ -171,6 +177,8 @@ Before relying on the model, document:
 - Evaluation metrics, including per-class performance where possible.
 - Known limitations involving lighting, backgrounds, unseen crops, and disease stages.
 Do not invent accuracy figures or disease coverage. Confirm these from the model labels, dataset, and evaluation results.
+
+
 Configuration and secrets
 - Store provider keys in a local .env file or a deployment secret manager.
 - Ensure .env files are excluded by .gitignore.
@@ -178,6 +186,8 @@ Configuration and secrets
 - Keep the API base URL configurable for development versus production.
 - Never embed private provider keys in mobile code: app bundles can be inspected.
 - For hosted deployment, configure environment variables in the hosting dashboard.
+
+
 Security and privacy
 - Never commit API keys, tokens, passwords, private certificates, or real .env files.
 - Check both the root Git repository and the mobile app repository before pushing.
@@ -188,6 +198,8 @@ Security and privacy
 - Add authentication, rate limits, and monitoring before making the API public.
 - Use HTTPS in production.
 - Treat disease predictions as estimates, not the sole basis for pesticide or treatment decisions.
+
+  
 Suggested .gitignore rules (merge these with the existing file rather than blindly overwriting it):
 # Secrets
 .env
