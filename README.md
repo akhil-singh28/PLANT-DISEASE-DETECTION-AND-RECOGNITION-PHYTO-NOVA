@@ -76,6 +76,7 @@ Technology stack
 - Environment variables for server-side configuration and provider credentials.
   
 For exact package versions, inspect requirements.txt and PlantDiseaseApp/package.json.
+
 Requirements
 - Python compatible with the packages in requirements.txt.
 - Node.js and npm.
@@ -83,25 +84,33 @@ Requirements
 - Expo Go on a compatible phone or an Android emulator.
 - A network connection between the phone and computer when using the local API.
 - Git if you want to manage or publish the source repository.
+
+  
 Commands below use Windows PowerShell and the project path C:\\Users\\hp\\PlantDiseaseProject. Change the path if yours is different.
+
 Installation
+
 1. Open the backend folder
 cd C:\\Users\\hp\\PlantDiseaseProject
-2. Activate or create the Python environment
+
+3. Activate or create the Python environment
 If .venv already exists:
 .\\.venv\\Scripts\\Activate.ps1
 If it does not exist:
 py -m venv .venv
 .\\.venv\\Scripts\\Activate.ps1
 You can avoid activation-policy issues by calling the environment's Python executable directly.
-3. Install Python dependencies
+
+5. Install Python dependencies
 .\\.venv\\Scripts\\python.exe -m pip install --upgrade pip
 .\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt
-4. Configure local environment variables
+6. Configure local environment variables
+
 If the chat integration uses Gemini, create a local .env in the project root with the variable name expected by api.py, for example:
 GEMINI_API_KEY=your_key_here
 Replace the placeholder locally. Never commit a real key, share it in screenshots, or paste it into public issues. The exact variable name must match the backend code.
-5. Install mobile dependencies
+
+7. Install mobile dependencies
 Open another PowerShell window:
 cd C:\\Users\\hp\\PlantDiseaseProject\\PlantDiseaseApp
 npm install
@@ -120,8 +129,11 @@ Run the mobile app
 In a separate terminal:
 cd C:\\Users\\hp\\PlantDiseaseProject\\PlantDiseaseApp
 npx.cmd expo start
+
+
 Use the displayed QR code with Expo Go where supported, or run the app in an Android emulator. Leave the Expo terminal running during development.
 Connect a physical phone
+
 The phone cannot use localhost to reach the computer's API; on the phone, localhost means the phone itself.
 1. Connect the phone and computer to the same Wi-Fi/local network.
 2. Run ipconfig in PowerShell and find the computer's current IPv4 address.
