@@ -63,6 +63,8 @@ PlantDiseaseProject/
         ├── components/
         │   └── app-tabs.tsx         # Bottom navigation
         └── diseaseInfo.tsx          # Disease information
+
+        
 This is a representative structure based on the project files. Keep every file referenced by imports and configuration. Remove obsolete SDK copies and backups only after confirming they are not needed.
 Technology stack
 - Python, FastAPI, and Uvicorn for the backend.
