@@ -33,6 +33,7 @@ The project is intended to make an initial image-based plant-health assessment a
 - Expo/EAS configuration for Android builds.
   
 The actual disease classes and prediction quality depend on the model, labels, and training/evaluation data included in the repository. Do not claim a particular accuracy or supported disease list without verifying the model and its evaluation results.
+
 Project structure
 PlantDiseaseProject/
 ├── api.py                         # FastAPI backend
