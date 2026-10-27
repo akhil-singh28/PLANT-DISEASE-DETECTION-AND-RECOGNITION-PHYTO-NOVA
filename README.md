@@ -274,6 +274,8 @@ GitHub publishing checklist
 - [ ] Do not use git push --force just to resolve diverged history.
 - [ ] Add verified dataset and model evaluation details.
 - [ ] Rotate any credential that was ever exposed.
+
+
 Future improvements
 Possible next steps:
 - Deploy a secure HTTPS backend.
