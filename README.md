@@ -66,6 +66,7 @@ PlantDiseaseProject/
 
         
 This is a representative structure based on the project files. Keep every file referenced by imports and configuration. Remove obsolete SDK copies and backups only after confirming they are not needed.
+
 Technology stack
 - Python, FastAPI, and Uvicorn for the backend.
 - TensorFlow/Keras for model loading and inference, where configured.
