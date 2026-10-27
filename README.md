@@ -23,6 +23,7 @@ Contents
 Overview and features
 
 The project is intended to make an initial image-based plant-health assessment accessible through a mobile interface. Its main parts are:
+
 - Image-based disease prediction through the backend /predict endpoint.
 - A mobile scanner/home screen.
 - A plant-health chatbot using the /chat endpoint.
