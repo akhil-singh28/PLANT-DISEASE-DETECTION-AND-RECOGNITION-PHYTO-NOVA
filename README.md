@@ -1,4 +1,4 @@
-# Phyto Nova 🌿
+# PLANT DISEASE DETECTION AND RECOGNITION-Phyto Nova 🌿
 
 **Plant Disease Detection and AI Plant Care Assistant**
 
