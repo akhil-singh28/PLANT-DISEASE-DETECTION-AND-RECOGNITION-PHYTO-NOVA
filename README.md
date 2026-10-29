@@ -350,5 +350,4 @@ Open the build details linked by EAS and read the first relevant error. Verify t
 No license has been specified in this README. Add a license only after deciding how the project may be used, modified, and redistributed.
 
 ---
-
 **Phyto Nova** — helping users explore plant health with image-based predictions and AI-assisted plant care.
