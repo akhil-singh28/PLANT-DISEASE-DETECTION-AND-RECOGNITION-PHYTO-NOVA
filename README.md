@@ -37,7 +37,6 @@ Phyto Nova is a mobile application project intended to help users identify possi
 - **Android packaging:** EAS Build is configured for an internal-preview APK and a production Android App Bundle.
 
 The exact disease classes, model architecture, dataset, and prediction confidence behavior should be documented after checking the actual model and backend implementation. This README intentionally does not claim unverified accuracy figures.
-
 ## Technology stack
 
 | Area | Technology |
