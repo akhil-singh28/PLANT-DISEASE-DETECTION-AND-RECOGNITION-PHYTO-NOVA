@@ -40,6 +40,7 @@ The exact disease classes, model architecture, dataset, and prediction confidenc
 ## Technology stack
 
 | Area | Technology |
+
 |---|---|
 | Mobile app | React Native, Expo, TypeScript/JavaScript |
 | Backend API | Python, FastAPI, Uvicorn |
