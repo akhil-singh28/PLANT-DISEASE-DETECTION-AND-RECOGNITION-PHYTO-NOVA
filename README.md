@@ -85,6 +85,7 @@ Install the following on the development computer:
 - A valid Gemini API key if the chatbot uses Gemini
 - EAS account for cloud Android builds
 
+
 ## Backend setup
 
 Open PowerShell and move to the project root:
