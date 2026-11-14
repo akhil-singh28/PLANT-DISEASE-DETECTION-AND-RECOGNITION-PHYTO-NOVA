@@ -7,7 +7,6 @@ Phyto Nova is a mobile application project intended to help users identify possi
 > **Project status:** The app and backend have been developed, and the API endpoints have been tested during development. Before calling the project production-ready, verify the final Android APK on a physical device, evaluate the disease classifier on a separate labelled test dataset, and deploy the backend securely if the app must work outside the development network.
 
 ## Contents
-
 - [Features](#features)
 - [Technology stack](#technology-stack)
 - [Project structure](#project-structure)
@@ -82,7 +81,6 @@ Install the following on the development computer:
 - An internet connection for package installation and AI chatbot requests
 - A valid Gemini API key if the chatbot uses Gemini
 - EAS account for cloud Android builds
-
 
 ## Backend setup
 
