@@ -347,9 +347,5 @@ Open the build details linked by EAS and read the first relevant error. Verify t
 4. Do not include `.env`, API keys, private data, or generated secrets in commits.
 5. Describe the change and the tests performed in your pull request.
 
-## License
-
-No license has been specified in this README. Add a license only after deciding how the project may be used, modified, and redistributed.
-
 ---
 **Phyto Nova** — helping users explore plant health with image-based predictions and AI-assisted plant care.
