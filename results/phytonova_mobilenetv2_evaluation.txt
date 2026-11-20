@@ -1,0 +1,7 @@
+PHYTO NOVA MOBILENETV2 EVALUATION
+---------------------------------
+Test images: 236
+Classes: 27
+Accuracy: 28.39%
+Macro Precision: 0.2905
+Macro F1-score: 0.2513
