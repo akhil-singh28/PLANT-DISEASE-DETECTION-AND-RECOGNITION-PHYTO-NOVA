@@ -227,9 +227,7 @@ Recommended development environment:
 - Android phone with Expo Go for development testing.
 - Internet connection for package installation and Gemini API requests.
 - Sufficient storage for the dataset, Python environment, and model files.
-
-An NVIDIA GPU is optional. The current training environment used TensorFlow on the CPU.
-
+- An NVIDIA GPU for training environment - TensorFlow
 ---
 
 ## ⚙ Installation and Setup
@@ -1085,11 +1083,11 @@ Phyto Nova provides a foundation for further research and development in AI-assi
 
 ---
 
-**Project Name:** Phyto Nova  
+**Project Name:** Phyto Nova : PLANT DISEASE DETECTION AND RECOGNITION
 **Project Category:** Artificial Intelligence / Deep Learning / Mobile Application Development  
 **Model Architecture:** MobileNetV2  
 **Backend:** FastAPI  
 **Frontend:** React Native + Expo  
 **Chatbot:** Google Gemini API  
 **Supported Categories:** 27 plant leaf classes  
-**Current Evaluation Accuracy:** 51.34% (provisional clean-test evaluation)
+**Current Evaluation Accuracy:** 51.34% 
