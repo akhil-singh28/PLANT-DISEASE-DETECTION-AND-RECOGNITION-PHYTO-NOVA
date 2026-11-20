@@ -7,7 +7,6 @@ The project combines a MobileNetV2-based deep learning model, a Python FastAPI b
 ---
 
 ## 📌 Table of Contents
-
 1. [Project Overview](#-project-overview)
 2. [Main Features](#-main-features)
 3. [Technology Stack](#-technology-stack)
