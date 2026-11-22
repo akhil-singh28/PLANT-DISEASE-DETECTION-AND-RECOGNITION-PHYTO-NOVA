@@ -49,7 +49,7 @@ The application also includes an AI chatbot to provide plant-related information
 - Integrate a trained MobileNetV2 model with a mobile application.
 - Provide an easy-to-use interface for image-based disease detection.
 - Integrate an AI chatbot for plant-related assistance.
-- Evaluate model performance using accuracy, precision, recall, and F1-score.
+- Evaluate model performance using accuracy, precision, and F1-score.
 
 ---
 
