@@ -1,4 +1,4 @@
-# 🌿 Phyto Nova – PLANT DISEASE DETECTION AND RECOGNITION
+# 🌿Phyto Nova – PLANT DISEASE DETECTION AND RECOGNITION
 
 Phyto Nova is an AI-powered PLANT DISEASE DETECTION AND RECOGNITION application designed to help users identify plant leaf diseases using images captured from a mobile device or selected from the Gallery.
 
