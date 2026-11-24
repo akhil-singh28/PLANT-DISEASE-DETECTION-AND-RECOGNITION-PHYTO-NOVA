@@ -44,7 +44,7 @@ The application also includes an AI chatbot to provide plant-related information
 
 ### Project Objectives
 
-- Develop an AI-based Plant Disease classification system.
+- Develop an AI-based Plant Disease classification system i.e PhytoNova.
 - Classify plant leaf images into 27 supported categories.
 - Integrate a trained MobileNetV2 model with a mobile application.
 - Provide an easy-to-use interface for image-based disease detection.
