@@ -817,7 +817,7 @@ The results indicate that improvements to dataset quality, class representation,
 
 ## 📦 Generating the Android APK
 
-Phyto Nova uses Expo Application Services (EAS) to build Android application packages.
+PhytoNova uses Expo Application Services (EAS) to build Android application packages.
 
 The Expo project is located at:
 
