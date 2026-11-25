@@ -162,7 +162,6 @@ Chatbot workflow:
 ## 📁 Project Folder Structure
 
 The main project directory is:
-
 ```text
 PlantDiseaseProject/
 │
