@@ -5,7 +5,6 @@ PhytoNova is an AI-powered PLANT DISEASE DETECTION AND RECOGNITION application d
 The project combines a MobileNetV2-based deep learning model, a Python FastAPI backend, and an Expo React Native Mobile Application. It also includes an AI Chatbot powered by the Gemini API.
 
 ---
-
 ## 📌 Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Main Features](#-main-features)
