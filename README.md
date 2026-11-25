@@ -38,7 +38,6 @@ Plant diseases can negatively affect agricultural productivity and crop quality.
 PhytoNova aims to provide an accessible mobile-based solution for plant leaf disease classification.
 
 Users can capture or upload a plant leaf image. The image is sent to a Python backend, where a trained deep learning model processes it and predicts the most likely disease category.
-
 The application also includes an AI chatbot to provide plant-related information and assistance.
 
 ### Project Objectives
