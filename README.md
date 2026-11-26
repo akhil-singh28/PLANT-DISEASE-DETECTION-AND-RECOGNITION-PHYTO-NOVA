@@ -133,7 +133,7 @@ The plant disease classifier uses MobileNetV2 transfer learning to classify leaf
        Result to Mobile App
 ```
 
-Chatbot workflow:
+Chatbot Workflow:
 
 ```text
        USER QUESTION
