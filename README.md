@@ -48,7 +48,6 @@ The application also includes an AI chatbot to provide plant-related information
 - Provide an easy-to-use interface for image-based disease detection.
 - Integrate an AI chatbot for plant-related assistance.
 - Evaluate model performance using accuracy, precision, and F1-score.
-
 ---
 
 ## ✨ Main Features
